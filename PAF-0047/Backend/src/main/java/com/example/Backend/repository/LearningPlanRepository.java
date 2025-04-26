@@ -8,7 +8,6 @@ import java.util.List;
 
 @Repository
 public interface LearningPlanRepository extends MongoRepository<LearningPlan, String> {
-
     // Find all learning plans ordered by creation date descending
     List<LearningPlan> findAllByOrderByCreatedAtDesc();
 
