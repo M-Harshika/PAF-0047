@@ -5,7 +5,6 @@ import java.util.Date;
 public class Like {
     private String userId;
     private Date createdAt;
-
     // Getters, setters, constructors
     public Like() {
     }
