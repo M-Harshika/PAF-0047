@@ -30,7 +30,6 @@ public class NotificationController {
                     .body("Error fetching notifications: " + e.getMessage());
         }
     }
-
     @GetMapping("/unread")
     public ResponseEntity<?> getUnreadNotifications(@RequestParam String userId) {
         if (userId == null || userId.isEmpty()) {
