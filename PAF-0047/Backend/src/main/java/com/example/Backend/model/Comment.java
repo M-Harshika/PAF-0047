@@ -10,7 +10,7 @@ public class Comment {
     private Date createdAt;
     private Date updatedAt;
 
-    // Getters, setters, constructors
+// Getters, setters, constructors
     public Comment() {
     }
 
