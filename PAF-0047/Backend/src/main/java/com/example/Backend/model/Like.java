@@ -8,7 +8,6 @@ public class Like {
     // Getters, setters, constructors
     public Like() {
     }
-
     public Like(String userId, Date createdAt) {
         this.userId = userId;
         this.createdAt = createdAt;
