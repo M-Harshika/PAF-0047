@@ -54,7 +54,6 @@ public class PostController {
         List<Post> posts = postService.getPostsByUserId(userId);
         return new ResponseEntity<>(posts, HttpStatus.OK);
     }
-
     // Update a post
     @PutMapping("/{id}")
     public ResponseEntity<Post> updatePost(@PathVariable String id, @RequestBody Post post) {

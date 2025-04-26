@@ -28,7 +28,6 @@ public class ProfileController {
         List<User> users = profileService.searchUsersByEmail(email);
         return ResponseEntity.ok(users);
     }
-
     @PostMapping("/follow/{followerId}/{followeeId}")
     public ResponseEntity<String> followUser(@PathVariable String followerId, @PathVariable String followeeId) {
         String result = profileService.followUser(followerId, followeeId);
